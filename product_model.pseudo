@@ -37,12 +37,12 @@ add to product_list                                 # adds the inputted data to 
 print "Product added Successfully!"
 
 
-# Function: Displays Product List
+# Function: Displays Product List                   
 function display_list()
-    if product_list has products                    
-        for each product in product_list:
+    if product_list has products                    # Checks the content of the product_list  
+        for each product in product_list:           # Loops through the products in product list
             print "Name", name
-            print "Width", width
+            print "Width", width                    # Prints the content of the products in product_list
             print "Height", height
             print "Length", length
             print "Weight", weight
