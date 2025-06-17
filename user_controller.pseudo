@@ -1,26 +1,31 @@
 # Handles user signup and login
 
+# List to store user records 
+user_record = []
+
 # Function: Registers a new user in the system
 
-# Checks if the email is already registered
-function create_user(name, email, password)
-    If email is not in users database:
-        Hash the password
-        Save hashed password, email, and name to database       
-        Output "Registration completed successfully!"           # Creates new user
-    Else: 
-        Output "Email already in use. Try logging in"           # Prevents duplicate accounts
+function create_user(name, email, password)                 
+    for each user in user_record:                           # Loops through the user_record
+        if user.email == email:                             # Checks it the email exists
+            return "Email already in use"                   
 
-# Function: login users based on provided credentials
+register_user = {                                           # Collects the credentials entered by the user 
+    name = name
+    email: email
+    password: password
+}
 
-function login_user(email, password)
-    If email exists in database:
-    Retrieve the encrypted password from the database
-    Compare it with the entered password                        # Verifies password from the database 
-        If password matched:
-            Output "Access granted"
-        Else: 
-            Output "Invalid credentials"                        # Credentials did not match from the database
+Add register_user to user_record                            # Stores the collected data to user_record
 
-    Else:
-        Output "User does not exist                             # User does not exist
+return "You Have Successfully Registered!"
+
+# Function: Login User
+
+function login_user(email, password)                    
+    for each user in user_record:                           # Loops through the user_record
+        if user.email == email                              # Checks if email exists in records
+            if password matches with email in user_record   # Checks if password matches the record 
+                return "You have logged in Successfully!"   # Returns Successfully logged in
+            else
+                return "Incorrect Password"                 # Returns Failure to login
