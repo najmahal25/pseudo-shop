@@ -1,16 +1,41 @@
 # Handles product data
 
-# Sample structure:
-# product = {
-#     name: "Sample Product",
-#     width: 10,
-#     height: 5,
-#     length: 20,
-#     weight: 1.5,
-#     color: "red",
-#     brand: "Generic"
-# }
 
-# Placeholder product list
+
+# Stores all products
 product_list = []
+
+
+# Function: Product Creation
+
+function add_product()
+
+input name
+input width
+input height
+input length
+input weight
+input color
+input brand
+
+for each product in product_list:
+    if product.name == name
+        print "This product already exists"
+        return
+
+# product object
+product = {
+    name: name,
+    width: width,
+    height: height,
+    length: length,
+    weight: weight,
+    color: color,
+    brand: brand
+}
+
+add to product_list
+print "Product added Successfully!"
+
+
 
