@@ -1,26 +1,26 @@
 # Handles user signup and login
 
-# Placeholder function signatures:
-# function create_user(name, email, password)
+# Function: Registers a new user in the system
 
+# Checks if the email is already registered
 function create_user(name, email, password)
     If email is not in users database:
         Hash the password
-        Save hashed password, email, and name to database
-        Return "Registration completed successfully!"
+        Save hashed password, email, and name to database       
+        Return "Registration completed successfully!"           # Creates new user
     Else
-        Return "Email already in use. Try logging in"
+        Return "Email already in use. Try logging in"           # Prevents duplicate accounts
 
-# function login_user(email, password)
+# Function: login users based on provided credentials
 
 function login_user(email, password)
     If email exists in database:
     Retrieve the encrypted password from the database
-    Compare it with the entered password
+    Compare it with the entered password                        # Verifies password from the database 
         If password matched:
             Return "Access granted"
         Else: 
-            Return "Invalid credentials"
+            Return "Invalid credentials"                        # Credentials did not match from the database
 
     Else:
-        Return "User does not exist
+        Return "User does not exist                             # User does not exist
