@@ -11,4 +11,16 @@ function create_user(name, email, password)
     Else
         Return "Email already in use. Try logging in"
 
+# function login_user(email, password)
 
+function login_user(email, password)
+    If email exists in database:
+    Retrieve the encrypted password from the database
+    Compare it with the entered password
+        If password matched:
+            Return "Access granted"
+        Else: 
+            Return "Invalid credentials"
+
+    Else:
+        Return "User does not exist
