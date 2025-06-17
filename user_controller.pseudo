@@ -7,9 +7,9 @@ function create_user(name, email, password)
     If email is not in users database:
         Hash the password
         Save hashed password, email, and name to database       
-        Return "Registration completed successfully!"           # Creates new user
-    Else
-        Return "Email already in use. Try logging in"           # Prevents duplicate accounts
+        Output "Registration completed successfully!"           # Creates new user
+    Else: 
+        Output "Email already in use. Try logging in"           # Prevents duplicate accounts
 
 # Function: login users based on provided credentials
 
@@ -18,9 +18,9 @@ function login_user(email, password)
     Retrieve the encrypted password from the database
     Compare it with the entered password                        # Verifies password from the database 
         If password matched:
-            Return "Access granted"
+            Output "Access granted"
         Else: 
-            Return "Invalid credentials"                        # Credentials did not match from the database
+            Output "Invalid credentials"                        # Credentials did not match from the database
 
     Else:
-        Return "User does not exist                             # User does not exist
+        Output "User does not exist                             # User does not exist
