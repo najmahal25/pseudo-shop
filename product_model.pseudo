@@ -1,30 +1,28 @@
 # Handles product data
-
-
+# capable of creating products and viewing the full list of available items.
 
 # Stores all products
 product_list = []
 
-
 # Function: Product Creation
 
-function add_product()
-
+function add_product()                              # function that adds product to product_list
 input name
 input width
 input height
-input length
-input weight
+input length                                        
+input weight                    
 input color
 input brand
+input price
 
-for each product in product_list:
-    if product.name == name
+for each product in product_list:                   # Loops through each product inside the product list
+    if product.name == name                         # Checks if there's an existing product with same name
         print "This product already exists"
-        return
+        return                                      # returns to inputting of product
 
-# product object
-product = {
+
+product = {                                         # this stores data through attributes
     name: name,
     width: width,
     height: height,
@@ -32,10 +30,25 @@ product = {
     weight: weight,
     color: color,
     brand: brand
+    price: price
 }
 
-add to product_list
+add to product_list                                 # adds the inputted data to product_list
 print "Product added Successfully!"
+
+
+# Function: Displays Product List
+function display_list()
+    if product_list has products                    
+        for each product in product_list:
+            print "Name", name
+            print "Width", width
+            print "Height", height
+            print "Length", length
+            print "Weight", weight
+            print "Color", color
+            print "Brand", brand
+            print "Price", price
 
 
 
