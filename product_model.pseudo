@@ -1,16 +1,54 @@
 # Handles product data
+# capable of creating products and viewing the full list of available items.
 
-# Sample structure:
-# product = {
-#     name: "Sample Product",
-#     width: 10,
-#     height: 5,
-#     length: 20,
-#     weight: 1.5,
-#     color: "red",
-#     brand: "Generic"
-# }
-
-# Placeholder product list
+# Stores all products
 product_list = []
+
+# Function: Product Creation
+
+function add_product()                              # function that adds product to product_list
+input name
+input width
+input height
+input length                                        
+input weight                    
+input color
+input brand
+input price
+
+for each product in product_list:                   # Loops through each product inside the product list
+    if product.name == name                         # Checks if there's an existing product with same name
+        print "This product already exists"
+        return                                      # returns to inputting of product
+
+
+product = {                                         # this stores data through attributes
+    name: name,
+    width: width,
+    height: height,
+    length: length,
+    weight: weight,
+    color: color,
+    brand: brand
+    price: price
+}
+
+add to product_list                                 # adds the inputted data to product_list
+print "Product added Successfully!"
+
+
+# Function: Displays Product List                   
+function display_list()
+    if product_list has products                    # Checks the content of the product_list  
+        for each product in product_list:           # Loops through the products in product list
+            print "Name", name
+            print "Width", width                    # Prints the content of the products in product_list
+            print "Height", height
+            print "Length", length
+            print "Weight", weight
+            print "Color", color
+            print "Brand", brand
+            print "Price", price
+
+
 
