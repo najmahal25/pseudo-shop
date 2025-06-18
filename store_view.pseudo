@@ -7,8 +7,7 @@ function display_products()
     input user_input                                                        # asks user if they want to show all products or filter products
 
     if user_input is equal to 1                                             # show all products 
-        for products in product_list
-            print product.name, product.price, and all product.attr
+        display_list()                                                      # display_list function exported from product_model.pseudo
 
     else if user_input is equal to 2                                        # filter all products based on user input filters
         input filters_input
