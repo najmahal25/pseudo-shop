@@ -1,3 +1,13 @@
+# Handles filtering of products based on specific filters
+function filter_products(filters)
+    filtered_product_list = []                              # initializes a new list for the filtered products
+
+    for each product in product_list    
+        if all product.attr is equal to all filters.attr    # compares product attributes with the filter attributes
+            add product to filtered_product_list            # adds the product if all filters are equal to its attributes
+
+    return filtered_product_list                            # returns the filtered_product list
+
 # Displays product listings
 function display_products() 
     print "Welcome to our Shop!"                                         
