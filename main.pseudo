@@ -8,29 +8,32 @@ print "[3] Login as admin"
 
 input user_input
 
+# User Login
 if user_input is equal to 1
     input email, password
-    if login_user(email, password) is success
+    if login_user(email, password) is success               # login user
         display_products()
 
-else if user_input is equal to 2
+# User Registration
+else if user_input is equal to 2                            
     input name, email, password
-    if create_user(name, email, password) is success
-        login_user(email, password)
+    if create_user(name, email, password) is success        # Creates new user
+        login_user(email, password)                         # redirects to login after
         display_products()
 
+# Login as Admin
 else if user_input is equal to 3
     input admin_email, admin_password
     if login_user(admin_email, admin_password) is success
         print "Admin View"
-        print "[1] add products"
-        print "[2] display products list"
+        print "[1] add products"                            
+        print "[2] display products list"                   
         input admin_input
 
-        if admin_input is equal to 1
+        if admin_input is equal to 1                        # Adds product 
             add_product()
         
-        else if admin_input is equal to 2
+        else if admin_input is equal to 2                   # Displays products list
             display_list()
         
         else
