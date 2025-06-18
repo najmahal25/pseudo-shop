@@ -6,6 +6,7 @@ function filter_products(filters)
         if all product.attr is equal to all filters.attr
             add product to filtered_product_list
 
+    return filtered_product_list
 
 # Displays product listings
 
