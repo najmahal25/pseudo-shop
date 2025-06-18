@@ -1,8 +1,47 @@
 # Main entry point
 
-# This file ties together all components of the pseudo-shop
-# Feel free to modify this to simulate application flow
-
 # Run the app
 print "Welcome to the Pseudo Shop!"
+print "[1] Login"
+print "[2] Sign-up"
+print "[3] Login as admin"
+
+input user_input
+
+if user_input is equal to 1
+    input email, password
+    if login_user(email, password) is success
+        display_products()
+
+else if user_input is equal to 2
+    input name, email, password
+    if create_user(name, email, password) is success
+        login_user(email, password)
+        display_products()
+
+else if user_input is equal to 3
+    input admin_email, admin_password
+    if login_user(admin_email, admin_password) is success
+        print "Admin View"
+        print "[1] add products"
+        print "[2] display products list"
+        input admin_input
+
+        if admin_input is equal to 1
+            add_product()
+        
+        else if admin_input is equal to 2
+            display_list()
+        
+        else
+            print "Invalid input."
+
+else 
+    print "Invalid input."
+
+    
+
+
+
+
 
