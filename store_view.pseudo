@@ -9,7 +9,23 @@ function filter_products(filters)
     return filtered_product_list                            # returns the filtered_product list
 
 # Displays product listings
+function display_products() 
+    print "Welcome to our Shop!"                                         
+    print "[1] Show all products"
+    print "[2] Filter products"
 
-# Placeholder function:
-# function display_products()
+    input user_input                                                        # asks user if they want to show all products or filter products
+
+    if user_input is equal to 1                                             # show all products 
+        display_list()                                                      # display_list function exported from product_model.pseudo
+
+    else if user_input is equal to 2                                        # filter all products based on user input filters
+        input filters_input
+        filtered_product_list = filter_products(filters_input)
+
+        for filter_product in filtered_product_list
+            print product.name, product.price and all product.attr
+
+    else                                                                    # if user types in an invalid input
+        print "Invalid input."
 
