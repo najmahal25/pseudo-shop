@@ -6,3 +6,17 @@ function display_products()
 
     input user_input
 
+    if user_input is equal to 1
+        for products in product_list
+            print product.name, product.price, and all product.attr
+
+    else if user_input is equal to 2
+        input filters_input
+        filtered_product_list = filter_products(filters_input)
+
+        for filter_product in filtered_product_list
+            print product.name, product.price and all product.attr
+
+    else
+        print "Invalid input."
+
