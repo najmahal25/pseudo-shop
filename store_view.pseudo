@@ -2,7 +2,11 @@
 function filter_products(filters)
     filtered_product_list = []
 
-    
+    for each product in product_list    
+        if all product.attr is equal to all filters.attr
+            add product to filtered_product_list
+
+
 # Displays product listings
 
 # Placeholder function:
